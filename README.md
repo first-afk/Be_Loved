@@ -1,10 +1,10 @@
 # Be Loved - Case Study
+
 ### Vercel link - https://be-loved.vercel.app
 
 **Be Loved** is a digital platform designed to inspire and guide users through daily acts of kindness across three essential areas of life: self, partner, and community. By providing curated "love cards" with actionable ideas, Be Loved addresses the gap between the desire to show love and the difficulty in finding meaningful, authentic ways to express it.
 
 ---
-
 
 ## Problem Statement
 
@@ -26,8 +26,6 @@ Create a centralized, user-friendly platform that provides daily inspiration and
 
 - **Demographic**: Everyone aged 18+
 - **Psychographic**: People who value relationships, personal growth, and community impact
-
-
 
 ## Core Features
 
@@ -56,6 +54,5 @@ Three distinct "Love Card" categories that provide curated ideas and prompts for
 
 ---
 
-
-**Student 1**: Esther Orieji (first-afk)
-**Student 2**: Iyobosa Omoruyi (Fhave)
+- **Student 1**: Esther Orieji (first-afk)
+- **Student 2**: Iyobosa Omoruyi (Fhave)
