@@ -1,0 +1,284 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Be Loved Landing Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#EE2B6C",
+              "background-light": "#F8F6F6",
+              "background-dark": "#221016",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-[#181113] dark:text-white font-display"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
+    >
+      <!-- TopAppBar -->
+      <header
+        class="flex items-center bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50 p-4 justify-between border-b border-[#E6DBDF] dark:border-[#3D212A]"
+      >
+        <div
+          class="text-primary flex size-10 shrink-0 items-center justify-center"
+        >
+          <span class="material-symbols-outlined text-3xl">favorite</span>
+        </div>
+        <h2
+          class="text-[#181113] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center"
+        >
+          Be Loved
+        </h2>
+        <div class="size-10 flex items-center justify-center">
+          <span
+            class="material-symbols-outlined text-2xl text-[#89616F] dark:text-[#CCACB7]"
+            >menu</span
+          >
+        </div>
+      </header>
+      <main class="flex-1">
+        <!-- Hero Section -->
+        <div class="@container">
+          <div class="@[480px]:p-4">
+            <div
+              class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-6"
+              data-alt="A warm image of two hands forming a heart shape in front of a soft sunset."
+              style="
+                background-image:
+                  linear-gradient(
+                    rgba(0, 0, 0, 0.2) 0%,
+                    rgba(0, 0, 0, 0.5) 100%
+                  ),
+                  url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBz_QJCkd4Td0w46ZfXPWqb8qwqz69vEfrEu1NwwxQN3ufSfWFiJrm-mKunaSckebRDrrEkYxfp1aNMh360fWvdkEC1iXs5dx406AWDswSpfYVHDagtNk7nYxh46pLwkekzCu8dVh6UwhpDnx2H0zzpXho88QtAfGveqr4gmjxYpYg-RtJt_ZV-aIteawp7AK3XsYRTCg-upAKJNtDqfz-oxPqa3swuGcUpONo_3sMzRodgfBpKFPtMFdzeMPpCklCUopCjPVsu_YYB&quot;);
+              "
+            >
+              <div class="flex flex-col gap-3 text-center max-w-[600px]">
+                <h1
+                  class="text-white text-4xl font-extrabold leading-tight tracking-[-0.033em] @[480px]:text-6xl"
+                >
+                  Spread Love, Starting with You.
+                </h1>
+                <p
+                  class="text-white/90 text-base font-normal leading-relaxed @[480px]:text-lg"
+                >
+                  Discover daily acts of kindness for yourself, your partner,
+                  and your world. Small gestures that make a big difference.
+                </p>
+              </div>
+              <button
+                class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20"
+              >
+                <span class="truncate">Get Inspired</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- How it Works Section -->
+        <section class="flex flex-col gap-8 px-6 py-12 @container">
+          <div class="flex flex-col gap-2 text-center items-center">
+            <h4
+              class="text-primary text-sm font-bold uppercase tracking-widest px-4 py-2"
+            >
+              How it Works
+            </h4>
+            <h2
+              class="text-[#181113] dark:text-white text-3xl font-extrabold leading-tight @[480px]:text-4xl tracking-tight"
+            >
+              Three Ways to Love
+            </h2>
+            <p
+              class="text-[#89616F] dark:text-[#CCACB7] text-base font-normal leading-normal max-w-[540px]"
+            >
+              Our application helps you cultivate meaningful connections across
+              all areas of your life with daily prompts and inspiration.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 @[640px]:grid-cols-3 gap-6">
+            <!-- Self-Love -->
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-[#E6DBDF] dark:border-[#3D212A] bg-white dark:bg-[#2D181E] p-6 hover:shadow-md transition-shadow"
+            >
+              <div
+                class="bg-primary/10 text-primary rounded-full size-12 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-2xl">person</span>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3
+                  class="text-[#181113] dark:text-white text-xl font-bold leading-tight"
+                >
+                  Self-Love
+                </h3>
+                <p
+                  class="text-[#89616F] dark:text-[#CCACB7] text-sm font-normal leading-relaxed"
+                >
+                  Nurture your own well-being with daily self-care prompts.
+                  Remember, you cannot pour from an empty cup.
+                </p>
+              </div>
+            </div>
+            <!-- Partner Love -->
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-[#E6DBDF] dark:border-[#3D212A] bg-white dark:bg-[#2D181E] p-6 hover:shadow-md transition-shadow"
+            >
+              <div
+                class="bg-primary/10 text-primary rounded-full size-12 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-2xl"
+                  >favorite_border</span
+                >
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3
+                  class="text-[#181113] dark:text-white text-xl font-bold leading-tight"
+                >
+                  Partner Love
+                </h3>
+                <p
+                  class="text-[#89616F] dark:text-[#CCACB7] text-sm font-normal leading-relaxed"
+                >
+                  Strengthen your bond with thoughtful gestures designed to show
+                  appreciation and deepen intimacy.
+                </p>
+              </div>
+            </div>
+            <!-- Community Love -->
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-[#E6DBDF] dark:border-[#3D212A] bg-white dark:bg-[#2D181E] p-6 hover:shadow-md transition-shadow"
+            >
+              <div
+                class="bg-primary/10 text-primary rounded-full size-12 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-2xl">groups</span>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3
+                  class="text-[#181113] dark:text-white text-xl font-bold leading-tight"
+                >
+                  Community Love
+                </h3>
+                <p
+                  class="text-[#89616F] dark:text-[#CCACB7] text-sm font-normal leading-relaxed"
+                >
+                  Make a difference in the world with small acts of kindness for
+                  friends, neighbors, and strangers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Newsletter Section -->
+        <section
+          class="bg-white dark:bg-[#2D181E] border-y border-[#E6DBDF] dark:border-[#3D212A]"
+        >
+          <div class="@container">
+            <div
+              class="flex flex-col items-center gap-8 px-6 py-16 @[480px]:gap-10 @[480px]:px-10 @[480px]:py-24"
+            >
+              <div class="flex flex-col gap-3 text-center">
+                <h2
+                  class="text-[#181113] dark:text-white text-3xl font-extrabold leading-tight @[480px]:text-4xl tracking-tight"
+                >
+                  Stay in the loop
+                </h2>
+                <p
+                  class="text-[#89616F] dark:text-[#CCACB7] text-base font-normal leading-normal max-w-[480px]"
+                >
+                  Join our community and get weekly inspiration delivered
+                  straight to your inbox.
+                </p>
+              </div>
+              <div class="flex w-full justify-center">
+                <div
+                  class="flex w-full flex-col @[480px]:flex-row gap-3 max-w-[480px]"
+                >
+                  <input
+                    class="flex w-full h-12 rounded-xl text-[#181113] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-background-light dark:bg-background-dark px-4 text-base font-normal leading-normal placeholder:text-[#89616F] dark:placeholder:text-[#6A4451]"
+                    placeholder="Enter your email"
+                    type="email"
+                  />
+                  <button
+                    class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-primary text-white text-base font-bold leading-normal transition-all hover:brightness-110"
+                  >
+                    <span class="truncate">Join Now</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer
+        class="p-8 bg-background-light dark:bg-background-dark border-t border-[#E6DBDF] dark:border-[#3D212A] text-center"
+      >
+        <div class="flex justify-center gap-6 mb-6">
+          <span class="material-symbols-outlined text-[#89616F] cursor-pointer"
+            >share</span
+          >
+          <span class="material-symbols-outlined text-[#89616F] cursor-pointer"
+            >chat_bubble</span
+          >
+          <span class="material-symbols-outlined text-[#89616F] cursor-pointer"
+            >mail</span
+          >
+        </div>
+        <p
+          class="text-[#89616F] dark:text-[#6A4451] text-xs font-medium uppercase tracking-widest"
+        >
+          © 2024 Be Loved. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
