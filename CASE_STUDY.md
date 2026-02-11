@@ -36,14 +36,14 @@ Three distinct "Love Card" categories that provide curated ideas and prompts for
 - **Key Message**: "You cannot pour from an empty cup"
 - **User Benefit**: Daily reminders to prioritize personal wellness
 
-### Partner Love Cards
+#### Partner Love Cards
 
 - **Purpose**: Strengthen intimate relationships
 - **Content Type**: Thoughtful gestures, appreciation ideas, intimacy prompts
 - **Key Message**: "Strengthen your bond with thoughtful gestures"
 - **User Benefit**: Fresh ideas to deepen connection and show appreciation
 
-### Community Love Cards
+#### Community Love Cards
 
 - **Purpose**: Make positive impact in the wider world
 - **Content Type**: Acts of kindness ideas, community engagement suggestions
