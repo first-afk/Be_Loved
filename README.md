@@ -17,4 +17,3 @@ Be Loved addresses the gap between the desire to show love and the difficulty in
 
 - [Case Study Document](CASE_STUDY.md)
 - [Design Document](DESIGN.md)
-
