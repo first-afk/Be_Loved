@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --font-body: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary-pink: #EE2B6C;
+  --color-text-secondary: #89616F;
+  --color-icon-secondary: #CCACB7;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  /* Border Radius */
+  --radius-default: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Font Weights */
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  /* Font Size */
+  --fs-h1: 2.25rem;
+  --fs-h2: 1.875rem;
+  --fs-h3: 1.25rem;
+  --fs-h4: 0.875rem;
+  --fs-body-lg: 1.125rem;
+  --fs-body-reg: 1rem;
+  --fs-body-sm: 0.875rem;
+  --fs-caption: 0.75rem;
+
+  /* Line Heights */
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.625;
+}
+
+:root,
+[data-theme='light'] {
+  --color-bg: #F8F6F6;
+  --color-text-primary: #181113;
+  --color-border: #E6DBDF;
+  --color-placeholder: #89616F;
+}
+
+[data-theme='dark'] {
+  --color-bg: #221016;
+  --color-text-primary: #FFFFFF;
+  --color-border: #3D212A;
+  --color-placeholder: #6A4451;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+}
+
