@@ -15,40 +15,44 @@
 </head>
 <body>
   <header>
-    <div class="logo-container">
-      <span class="logo-wordmark">Be Loved</span>
-    </div>
-    <nav>
-      <a class="nav-class" href="#story">Our Story</a>
-      <a class="nav-class" href="#love-ideas"> Love Ideas </a>
-      <a class="nav-class" href="#contact"> Contact </a>
-    </nav>
-    <div>
-      <button class="button-class">Join Us</button>
-    </div>
+    <section class="navigation">
+      <div class="logo-container">
+        <span class="logo-wordmark">Be Loved</span>
+      </div>
+      <nav>
+        <a class="nav-class" href="#story">Our Story</a>
+        <a class="nav-class" href="#love-ideas"> Love Ideas </a>
+        <a class="nav-class" href="#contact"> Contact </a>
+      </nav>
+      <div>
+        <button class="btn-primary">Join Us</button>
+      </div>
+    </section>
 
     <section class="hero">
-      <img src="images/hero.png" alt="A love shape from two hands" />
-      <h1>Spread Love, Starting With You</h1>
-      <p>
+
+      <h1 class="fs-h1">Spread Love, Starting With You</h1>
+      <p class="fs-body-reg">
         Discover daily acts of kindness for yourself, your partner, and your
         world. Small gestures that make a big difference.
       </p>
-      <button>Get Inspired</button>
+      <button class="btn-primary">Get Inspired</button>
     </section>
   </header>
 
   <main>
     <section class="acts-of-love">
-      <h2>How it Works</h2>
-      <h3>Three Ways to Love</h3>
-      <p>
-        Our application helps you cultivate meaningful connections across
-        all areas of your life with daily prompts and inspiration.
-      </p>
+      <div class="acts-of-love-text">
+        <h2>How it Works</h2>
+        <h3>Three Ways to Love</h3>
+        <p>
+          Our application helps you cultivate meaningful connections across
+          all areas of your life with daily prompts and inspiration.
+        </p>
+      </div>
 
-      <div class="cards">
-        <div class="self-love">
+      <div class="love-card">
+        <div class="self love">
           <span class="material-symbols-outlined">person</span>
           <h3>Self-Love</h3>
           <p>
@@ -57,7 +61,7 @@
           </p>
         </div>
 
-        <div class="partner-love">
+        <div class="partner love">
           <span class="material-symbols-outlined">favorite_border</span>
           <h3>Partner Love</h3>
           <p>
@@ -66,8 +70,8 @@
           </p>
         </div>
 
-        <div class="commmunity-love">
-          <span class="material-symbols-outlined text-2xl">groups</span>
+        <div class="commmunity love">
+          <span class="material-symbols-outlined">groups</span>
           <h3>Community Love</h3>
           <p>
             Make a difference in the world with small acts of kindness for
@@ -75,12 +79,12 @@
           </p>
         </div>
 
-        <aside>
-          <p>
-            "Love is shown more in deeds than in words." — Saint Ignatius
-          </p>
-        </aside>
       </div>
+      <aside>
+        <p>
+          "Love is shown more in deeds than in words." — Saint Ignatius
+        </p>
+      </aside>
     </section>
 
     <section class="contact-form">
@@ -91,7 +95,7 @@
       </p>
       <form>
         <input placeholder="Enter your email" type="email" />
-        <button class="contact-form form-button">Join Now</button>
+        <button class="btn-primary">Join Now</button>
       </form>
     </section>
   </main>
