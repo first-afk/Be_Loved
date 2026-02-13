@@ -3,7 +3,7 @@
 :root {
   --font-body: "Plus Jakarta Sans", sans-serif;
 
-  --color-primary-pink: #EE2B6C;
+  --color-primary-pink: #ee2b6c;
   --color-text-secondary: #89616f;
   --color-icon-secondary: #ccacb7;
 
@@ -67,7 +67,56 @@
 
 header {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+nav{
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  height: 3rem;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  border: none;
+}
+input::placeholder {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-body-reg);
+}
+input:focus {
+  outline: 2px solid var(--color-primary-pink);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: var(--spacing-sm);
+  width: 30rem;
+}
+
+footer {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  font-size: var(--fs-body-sm);
+}
+
 
 .btn-primary {
   background: var(--color-primary-pink);
@@ -94,13 +143,14 @@ header {
   border: 1px solid var(--color-border);
 }
 
-.love-card {
+.love-cards {
   transition: all 0.3s ease;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  margin: var(--spacing-sm);
-  padding:var(--spacing-sm) ;
+  margin: var(--spacing-xs);
+  padding: var(--spacing-sm);
 }
 
 .material-symbols-outlined {
@@ -126,37 +176,20 @@ header {
   padding: var(--spacing-md);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-input[type="email"] {
-  height: 3rem;
-  padding: var(--spacing-md);
-  border-radius: var(--radius-lg);
-  background: var(--color-bg);
-  color: var(--color-text-primary);
-  border: none;
-}
-input[type="email"]::placeholder {
-  color: var(--color-placeholder);
-}
-input:focus {
-  outline: 2px solid var(--color-primary-pink);
-}
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  max-width: 480px;
-}
 
 .hero {
+  position: relative;
   min-height: 520px;
-  background: url(images/hero.png);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(./../images/hero.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  border-radius: var(--radius-lg);
   color: white;
-  padding: 1.5rem;
+  margin: var(--spacing-md);
   gap: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -164,111 +197,152 @@ form {
   align-items: center;
 }
 
-footer {
-  background: var(--color-bg);
-  border-top: 1px solid var(--color-border);
-  padding: var(--spacing-lg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-md);
-  color: var(--color-text-secondary);
-  text-transform: uppercase;
-  font-size: var(--fs-body-sm);
+
+nav a{
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+nav a:hover{
+  color: var(--color-primary-pink);
+}
+.navigation h2{
+  font-size: var(--fs-body-lg);
+  font-weight: var(--fw-black);
 }
 
-
-
-.love:hover {
-  box-shadow: 0 0 1.25rem rgba(238, 43, 108, 0.2);
+.hero h1{
+  font-size: 3.5rem;
+  font-weight: var(--fw-black);
+  width: 80%;
+  text-align: center;
+  z-index: 1;
 }
+.hero p{
+  font-size: var(--fs-body-lg);
+  font-weight: var(--fw-normal);
+  width: 80%;
+  text-align: center;
+  z-index: 1;
+}
+
 .love {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 1 350px;
   text-align: left;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs);
   background: white;
   border-radius: var(--radius-lg);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   border: 1px solid var(--color-border);
-  margin: var(--spacing-sm);
+  margin: var(--spacing-xs);
+  max-height: 540px;
 }
 
-.love h3{
+.love:hover {
+  box-shadow: 0 0 1.25rem rgba(238, 43, 108, 0.2);
+}
+
+.love h3 {
   font-size: var(--fs-h3);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   align-self: flex-start;
 }
-.love p{
+.love p {
   font-size: var(--fs-body-sm);
-  color: var(--color-text-secondary); 
+  color: var(--color-text-secondary);
 }
 
-.acts-of-love{
+.acts-of-love {
   padding: var(--spacing-lg);
-  margin: var(--spacing-sm);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background: var(--color-bg);
 }
-.acts-of-love-text{
+.acts-of-love-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: var(--spacing-sm);
 }
-.acts-of-love-text h2{
- font-size: var(--fs-body-reg);
- font-weight: var(--fw-bold);
- color: var(--color-primary-pink);
+.acts-of-love-text h2 {
+  font-size: var(--fs-body-reg);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary-pink);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
-.acts-of-love-text h3{
- font-size: var(--fs-h1);
- font-weight: var(--fw-black);
- color: var(--color-text-primary);
- margin: var(--spacing-sm);
+.acts-of-love-text h3 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-black);
+  color: var(--color-text-primary);
+  margin: var(--spacing-sm);
 }
-.acts-of-love-text p{
- font-size: var(--fs-body-reg);
- font-weight: var(--fw-normal);
- color: var(--color-text-secondary);
- width: 50%;
- text-align: center;
- line-height: var(--lh-relaxed);
+.acts-of-love-text p {
+  font-size: var(--fs-body-reg);
+  font-weight: var(--fw-normal);
+  color: var(--color-text-secondary);
+  width: 80%;
+  text-align: center;
+  line-height: var(--lh-relaxed);
 }
 
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: var(--spacing-2xl);
+  width: 100%;
 }
-.contact-form h2{
+.contact-form h2 {
   font-size: var(--fs-h1);
   font-weight: var(--fw-black);
-  /* margin: var(--spacing-sm); */
 }
 
-.contact-form p{
+.contact-form p {
   font-size: var(--fs-body-reg);
- font-weight: var(--fw-normal);
- color: var(--color-text-secondary);
-  width: 50%;
- text-align: center;
- line-height: var(--lh-relaxed);
-margin: var(--spacing-sm) 0;
+  font-weight: var(--fw-normal);
+  color: var(--color-text-secondary);
+  width: 80%;
+  text-align: center;
+  line-height: var(--lh-relaxed);
+  margin: var(--spacing-sm) 0;
 }
 
-form{
-  margin-top: var(--spacing-sm);
-  
+.contact-form input[type="email"] {
+  flex: 1;
 }
-
 
 aside {
   justify-self: center;
   align-self: center;
+}
+
+@media screen and (max-width: 640px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: var(--fs-body-sm);
+  }
+  .acts-of-love-text h3 {
+    font-size: var(--fs-h2);
+  }
+  .acts-of-love-text p {
+    width: 100%;
+  }
+  .contact-form p {
+    width: 100%;
+  }
+  form{
+    flex-direction: column;
+    width: 100%;
+  }
+  nav{
+    display: none;
+  }
 }
