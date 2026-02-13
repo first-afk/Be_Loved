@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Love Form Page</title>
+  <title>Be Loved | Love Form Page</title>
+  <link rel="stylesheet" href="../css/page.css" />
 </head>
 <body>
   <header>
-   <section class="navigation">
+    <section class="navigation">
       <h2>
         Be Loved
       </h2>
       <nav>
-        <a href="#story">Our Story</a>
-        <a href="#love-ideas"> Love Ideas </a>
+        <a href="../index.html">Our Story</a>
+        <a href="./love-form.html"> Love Ideas </a>
         <a href="#contact"> Contact </a>
       </nav>
       <div>
@@ -23,40 +24,70 @@
   </header>
 
   <main>
-    <section class="form">
-      <h1>What kind of love do you want to share today?</h1>
-      <p>Tell us a bit about your intention and we'll handle the rest.</p>
-      <form>
-        <div class="form-group">
-          <label for="recipient">Who is this for?</label>
-          <select id="recipient" name="recipient">
-            <option value="myself">Myself</option>
-            <option value="partner">My Partner</option>
-            <option value="community">Community</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label> How much time do you have?</label>
-          <input checked="" type="radio" />
-          <label> 5 mins </label>
-          <input checked="" type="radio" />
-          <label> 30 mins </label>
-          <input checked="" type="radio" />
-          <label> 1 hour + </label>
-        </div>
-        <div class="form-group">
-          <label> What is the mood?</label>
-          <input checked="" type="radio" />
-          <label> Creative </label>
-          <input checked="" type="radio" />
-          <label> Quiet </label>
-          <input checked="" type="radio" />
-          <label> Energetic </label>
-          <input checked="" type="radio" />
-          <label> Romantic </label>
-        </div>
-          <button>Find my Inspiration</button>
-      </form>
+    <section class="love-form-container">
+      <div class="form-header">
+        <h1>What kind of love do you want to share today?</h1>
+        <p>Tell us a bit about your intention, and we'll handle the rest.</p>
+      </div>
+
+      <div class="form-card">
+        <form>
+          <div class="form-group">
+            <label for="recipient">WHO IS THIS FOR?</label>
+            <div class="select-wrapper">
+              <select id="recipient" name="recipient">
+                <option value="myself">Myself</option>
+                <option value="partner">My Partner</option>
+                <option value="community">Community</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>HOW MUCH TIME DO YOU HAVE?</label>
+            <div class="pill-group">
+              <label class="pill">
+                <input type="radio" name="time" value="5" checked>
+                <span>5 mins</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="time" value="30">
+                <span>30 mins</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="time" value="60">
+                <span>1 hour+</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>WHAT IS THE MOOD?</label>
+            <div class="pill-group">
+              <label class="pill">
+                <input type="radio" name="mood" value="creative" checked>
+                <span>Creative</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="mood" value="quiet">
+                <span>Quiet</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="mood" value="energetic">
+                <span>Energetic</span>
+              </label>
+              <label class="pill">
+                <input type="radio" name="mood" value="romantic">
+                <span>Romantic</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary full-width">
+            <a href="idea-details.html">Find My Inspiration</a>
+          </button>
+        </form>
+      </div>
     </section>
   </main>
 
