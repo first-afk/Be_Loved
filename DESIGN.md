@@ -50,7 +50,7 @@
 ### Typography Scale
 
 | Element         | Size               | Weight      | Line Height | Usage                             |
-| --------------- | ---------------------------------- | ------ | ----------- | 
+| --------------- | ---------------------------------- | ------ | ----------- |
 
 | H1 (Hero)       | 2.25rem (36px) / 3.75rem (60px)\*  | 800    | Tight       | Main hero heading                 |
 | H2 (Section)    | 1.875rem (30px) / 2.25rem (36px)\* | 800    | Tight       | Section titles                    |
@@ -337,7 +337,7 @@ All color values use Tailwind's dark mode utilities:
 
 ---
 
-**Last Updated**: February 2026  
-**Version**: 1.0  
+**Last Updated**: February 2026
+**Version**: 1.0
 **Theme**: light-hearted
 **Reference**: Google Stitch

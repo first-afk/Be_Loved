@@ -29,7 +29,7 @@ Create a centralized, user-friendly platform that provides daily inspiration and
 
 Three distinct "Love Card" categories that provide curated ideas and prompts for expressing love:
 
-#### Self-Love Cards
+### Self-Love Cards
 
 - **Purpose**: Nurture personal well-being
 - **Content Type**: Self-care prompts, wellness reminders, personal affirmations
