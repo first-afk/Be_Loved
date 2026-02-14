@@ -68,3 +68,64 @@ Created an initial design concept and implemented the header and footer.
 - Built the top section structure to support navigation integration.
 - Designed and implemented the footer with organized links and supporting information.
 - Ensured consistent spacing and semantic HTML structure for both header and footer.
+
+
+## Week 4
+
+### Esther Orieji
+
+#### Authentication Pages (Sign Up & Log In)
+
+What I did:
+Built the Sign Up and Log In pages.
+
+How I did it:
+
+- Structured the forms using semantic HTML.
+- Designed a split layout with an image and form section.
+- Styled clean inputs and clear action buttons.
+- Added navigation links between login and sign-up.
+- Included social login icon placeholders.
+
+---
+
+#### Reusable UI System
+
+What I did:
+Created consistent, reusable styles.
+
+How I did it:
+
+- Built reusable button styles.
+- Standardized input fields and spacing.
+- Designed reusable card components.
+- Kept navigation and footer styling consistent.
+
+---
+
+#### Responsive Design
+
+What I did:
+Ensured the site works well on all devices.
+
+How I did it:
+
+- Used responsive layout techniques.
+- Stacked elements vertically on mobile.
+- Adjusted font sizes for smaller screens.
+- Hid decorative elements on mobile.
+
+## Week 3
+
+### Esther Orieji (Design + Navbar & Main Section Implementation)
+
+*What I did:*
+Created a separate design concept and implemented the navbar and main content section.
+
+*How I did it:*
+
+- Developed an alternative design concept before the team decided on the final direction.
+- Built the navigation bar with structured links and clear alignment.
+- Implemented the main content section, including the heading area and main sections.
+- Structured content blocks for readability and future styling.
+- Maintained clean semantic HTML for scalability and easy CSS integration.
