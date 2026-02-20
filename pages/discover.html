@@ -1,111 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Be Loved | Discover Page</title>
-</head>
-<body>
-  <header>
-    <section class="navigation">
-      <h2>
-        Be Loved
-      </h2>
-      <nav>
-        <a href="../index.html">Our Story</a>
-        <a href="./love-form.html"> Love Ideas </a>
-        <a href="#contact"> Contact </a>
-      </nav>
-      <div>
-        <a href="signin.html"><button class="btn-primary">Join Us</button></a>
-      </div>
-    </section>
-  </header>
-
-  <main>
-    <section>
-      <h2 id="discovery-heading">Discovery</h2>
-
-      <form role="search">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be Loved | Discover Page</title>
+    <link rel="stylesheet" href="./../css/base.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/discover.css" />
+  </head>
+  <body>
+    <header>
+      <section class="navigation">
+        <h2>Be Loved</h2>
+        <nav>
+          <a href="../index.html">Our Story</a>
+          <a href="./love-form.html"> Love Ideas </a>
+          <a href="#contact"> Contact </a>
+        </nav>
         <div>
-          <input type="search" id="search" name="search" placeholder="Find an act of love.." />
+          <a href="signin.html"><button class="btn-primary">Join Us</button></a>
         </div>
-        <div class="">
-          <label class="">
-            <input type="radio" name="categories" value="myself">
-            <span>Myself</span>
-          </label>
-          <label class="">
-            <input type="radio" name="categories" value="partner">
-            <span>My Partner</span>
-          </label>
-          <label class="">
-            <input type="radio" name="categories" value="community">
-            <span>Community</span>
-          </label>
+      </section>
+      <section>
+        <div class="search-bar">
+          <h2 id="discovery-heading">Discovery</h2>
+          <form role="search">
+            <input
+              type="search"
+              id="search"
+              name="search"
+              placeholder="Find an act of love.."
+            />
+          </form>
         </div>
-        <div class="">
-          <label class="">
-            <input type="radio" name="filters" value="quick">
-            <span>Quick</span>
-          </label>
-          <label class="">
-            <input type="radio" name="filters" value="deep">
-            <span>Deep Connection</span>
-          </label>
-          <label class="">
-            <input type="radio" name="filters" value="creative">
-            <span>Creative</span>
-          </label>
+
+        <div class="category-tabs">
+          <button class="active">Self</button>
+          <button>Partner</button>
+          <button>Community</button>
         </div>
-      </form>
-    </section>
 
-    <section id="ideas">
-      <div>
-        <img src="../images/note.png" alt="Journal and pen on a linen sheet" />
-        <h3>Write a Letter to Your Future Self</h3>
-        <p>15 minutes</p>
-        <p>#SelfLove #Reflection</p>
-        <button type="button">Save</button>
-      </div>
+        <div class="filter-chips">
+          <button class="btn-secondary">Quick</button>
+          <button class="btn-secondary">Deep Connection</button>
+          <button class="btn-secondary">Creative</button>
+        </div>
+      </section>
+    </header>
 
-      <div>
-        <img src="../images/note.png" alt="Journal and pen on a linen sheet" />
-        <h3>Write a Letter to Your Future Self</h3>
-        <p>15 minutes</p>
-        <p>#SelfLove #Reflection</p>
-        <button type="button">Save</button>
-      </div>
+    <main>
+      <section id="ideas">
+        <div class="idea-card">
+          <div class="idea-img">
+            <img
+              src="../images/note.png"
+              alt="Journal and pen on a linen sheet"
+            />
+            <p class="time">15 Mins</p>
+          </div>
+          <div class="idea-txt">
+            <h3>Write a Letter to Your Future Self</h3>
+            <p class="hashtags">#SelfLove #Reflection</p>
+            <button class="btn-secondary" type="button">Save</button>
+          </div>
+        </div>
 
-      <div>
-        <img src="../images/note.png" alt="Journal and pen on a linen sheet" />
-        <h3>Write a Letter to Your Future Self</h3>
-        <p>15 minutes</p>
-        <p>#SelfLove #Reflection</p>
-        <button type="button">Save</button>
-      </div>
+        <div class="idea-card">
+          <div class="idea-img">
+            <img
+              src="../images/note.png"
+              alt="Journal and pen on a linen sheet"
+            />
+            <p class="time">15 Mins</p>
+          </div>
+          <div class="idea-txt">
+            <h3>Write a Letter to Your Future Self</h3>
+            <p class="hashtags">#SelfLove #Reflection</p>
+            <button class="btn-secondary" type="button">Save</button>
+          </div>
+        </div>
 
-      <div>
-        <img src="../images/note.png" alt="Journal and pen on a linen sheet" />
-        <h3>Write a Letter to Your Future Self</h3>
-        <p>15 minutes</p>
-        <p>#SelfLove #Reflection</p>
-        <button type="button">Save</button>
-      </div>
+        <div class="idea-card">
+          <div class="idea-img">
+            <img
+              src="../images/note.png"
+              alt="Journal and pen on a linen sheet"
+            />
+            <p class="time">15 Mins</p>
+          </div>
+          <div class="idea-txt">
+            <h3>Write a Letter to Your Future Self</h3>
+            <p class="hashtags">#SelfLove #Reflection</p>
+            <button class="btn-secondary" type="button">Save</button>
+          </div>
+        </div>
 
-      <div>
-        <img src="../images/note.png" alt="Journal and pen on a linen sheet" />
-        <h3>Write a Letter to Your Future Self</h3>
-        <p>15 minutes</p>
-        <p>#SelfLove #Reflection</p>
-        <button type="button">Save</button>
-      </div>
-    </section>
-  </main>
+        <div class="idea-card">
+          <div class="idea-img">
+            <img
+              src="../images/note.png"
+              alt="Journal and pen on a linen sheet"
+            />
+            <p class="time">15 Mins</p>
+          </div>
+          <div class="idea-txt">
+            <h3>Write a Letter to Your Future Self</h3>
+            <p class="hashtags">#SelfLove #Reflection</p>
+            <button class="btn-secondary" type="button">Save</button>
+          </div>
+        </div>
 
-  <footer>
-    <p>&copy; 2026 Be Loved. All Rights Reserved</p>
-  </footer>
-</body>
+        <div class="idea-card">
+          <div class="idea-img">
+            <img
+              src="../images/note.png"
+              alt="Journal and pen on a linen sheet"
+            />
+            <p class="time">15 Mins</p>
+          </div>
+          <div class="idea-txt">
+            <h3>Write a Letter to Your Future Self</h3>
+            <p class="hashtags">#SelfLove #Reflection</p>
+            <button class="btn-secondary" type="button">Save</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Be Loved. All Rights Reserved</p>
+    </footer>
+  </body>
 </html>
