@@ -1,16 +1,50 @@
 @import url("style.css");
 
+main {
+  padding: 0px 10px;
+  background-color: var(--color-bg);
+}
+
+main>section {
+  width: 100%;
+}
+
+#discovery-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
 .search-bar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  position: relative;
   gap: var(--spacing-md);
   padding: var(--spacing-md);
 }
+
 .search-bar form,
 .search-bar input {
-  flex: 1;
-  margin-bottom: 10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(58, 56, 56, 0.472) 0px 1px 2px;
+}
+
+.search-bar input::placeholder {
+  font-size: 1rem;
+  font-style: italic;
+  padding-left: 30px;
+  color: var(--color-text-secondary);
+}
+
+.search-bar span {
+  position: absolute;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  left: 2rem;
+  top: 68%;
+  transform: translateY(-50%);
+  color: var(--color-primary-pink);
 }
 
 .category-tabs,
@@ -18,8 +52,9 @@
   display: flex;
   gap: var(--spacing-xs);
   padding: var(--spacing-xs);
-  justify-content: center;
+  justify-content: left;
 }
+
 .category-tabs button {
   background: var(--color-border);
   border: 1px solid var(--color-border);
@@ -31,10 +66,12 @@
   font-weight: var(--fw-bold);
   cursor: pointer;
 }
+
 .category-tabs .active {
   background: var(--color-primary-pink);
   color: var(--color-bg);
 }
+
 .category-tabs button,
 .filter-chips button {
   flex-shrink: auto;
