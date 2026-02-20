@@ -4,8 +4,8 @@ A digital platform designed to inspire and guide users through daily acts of kin
 
 ## Contributors
 
-- Esther Orieji (first-afk)
-- Iyobosa Omoruyi (Fhave)
+- Esther Orieji (first-afk) - https://medium.com/@estherorieji2/how-beloved-came-to-be-bfb5fd0ec9cb
+- Iyobosa Omoruyi (Fhave) 
 
 ## Case Study Summary
 
