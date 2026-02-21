@@ -325,7 +325,7 @@ All color values use Tailwind's dark mode utilities:
 
 /* Text Colors */
 --text-primary: #181113;
---text-primary-dark: #ffffff;
+--text-primary-dark: #010000;
 --text-secondary: #89616f;
 --text-secondary-dark: #6a4451;
 
