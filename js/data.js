@@ -1,0 +1,164 @@
+const discover = [
+  {
+    id: 1,
+    title: "Write a Letter to Your Future Self",
+    content: "Take a moment to write down your current feelings, hopes, and dreams. Seal it and open it in exactly one year.",
+    time: "15 Mins",
+    image: "../images/note.png",
+    hashtags: ["#selflove", "#Reflection", "#Quick"]
+  },
+  {
+    id: 2,
+    title: "Digital Detox Evening",
+    content: "Turn off all screens an hour before bed. Use this time to read, meditate, or simply be present with your thoughts.",
+    time: "60 Mins",
+    image: "../images/tea.png",
+    hashtags: ["#selflove", "#DeepConnection"]
+  },
+  {
+    id: 3,
+    title: "Create a Vision Board",
+    content: "Gather magazines, scissors, and a board. Cut out images and words that resonate with your goals and arrange them.",
+    time: "45 Mins",
+    image: "../images/journal.png",
+    hashtags: ["#selflove", "#Creative"]
+  },
+  {
+    id: 4,
+    title: "Leave a Hidden Sticky Note",
+    content: "Write a sweet, encouraging message on a sticky note and hide it in your partner's wallet or laptop where they will find it later.",
+    time: "5 Mins",
+    image: "../images/sticky-note.jpg",
+    hashtags: ["#partner", "#Quick"]
+  },
+  {
+    id: 5,
+    title: "Cook a Meal Together",
+    content: "Pick a new recipe, gather the ingredients, and cook dinner together while playing your favorite background music.",
+    time: "60 Mins",
+    image: "../images/veggie.png",
+    hashtags: ["#partner", "#DeepConnection"]
+  },
+  {
+    id: 6,
+    title: "Buy Coffee for a Stranger",
+    content: "Next time you are at a cafe, pay for the order of the person behind you in line to brighten their day.",
+    time: "5 Mins",
+    image: "../images/mug.png",
+    hashtags: ["#community", "#Quick"]
+  },
+  {
+    id: 7,
+    title: "Neighborhood Cleanup",
+    content: "Take a trash bag and gloves on your next walk. Pick up any litter you see in your local park or street.",
+    time: "30 Mins",
+    image: "../images/cleanup.jpg",
+    hashtags: ["#community", "#Creative"]
+  },
+  {
+    id: 8,
+    title: "Plan a Surprise Indoor Picnic",
+    content: "Clear the living room floor, lay down a blanket, and serve simple finger foods and wine for a cozy date night.",
+    time: "40 Mins",
+    image: "../images/picnic.jpg",
+    hashtags: ["#partner", "#Creative"]
+  },
+  {
+    id: 9,
+    title: "Mindful Breathing Exercise",
+    content: "Sit quietly and practice the 4-7-8 breathing technique to center your mind and reduce stress.",
+    time: "10 Mins",
+    image: "../images/yoga.png",
+    hashtags: ["#selflove", "#Quick"]
+  },
+  {
+    id: 10,
+    title: "Volunteer at an Animal Shelter",
+    content: "Spend a couple of hours walking dogs or petting cats at your local animal rescue center.",
+    time: "120 Mins",
+    image: "../images/shelter.jpg",
+    hashtags: ["#community", "#DeepConnection"]
+  },
+  {
+    id: 11,
+    title: "Try a New Recipe for Yourself",
+    content: "Treat yourself like a guest. Cook a meal you've never tried before, plate it beautifully, and enjoy.",
+    time: "45 Mins",
+    image: "../images/dining.jpg",
+    hashtags: ["#selflove", "#Creative"]
+  },
+  {
+    id: 12,
+    title: "Send a Mid-Day Appreciation Text",
+    content: "Text your partner out of the blue to tell them one specific thing you love and appreciate about them.",
+    time: "2 Mins",
+    image: "../images/text.jpg",
+    hashtags: ["#partner", "#Quick"]
+  },
+  {
+    id: 13,
+    title: "Leave a Glowing Review",
+    content: "Think of a local small business you love and leave them a 5-star review detailing what makes them great.",
+    time: "10 Mins",
+    image: "../images/review.jpg",
+    hashtags: ["#community", "#Quick"]
+  },
+  {
+    id: 14,
+    title: "Stargazing and Conversing",
+    content: "Go outside on a clear night, lay out a blanket, and take turns asking deep, open-ended questions.",
+    time: "60 Mins",
+    image: "../images/stars.jpg",
+    hashtags: ["#partner", "#DeepConnection"]
+  },
+  {
+    id: 15,
+    title: "Solo Nature Walk",
+    content: "Go for a walk in a local park or forest without your phone or music. Just listen to the sounds of nature.",
+    time: "30 Mins",
+    image: "../images/forest.png",
+    hashtags: ["#selflove", "#DeepConnection"]
+  },
+  {
+    id: 16,
+    title: "Donate Unused Books",
+    content: "Gather books you've already read and drop them off at a local Little Free Library for others to enjoy.",
+    time: "20 Mins",
+    image: "../images/books.jpg",
+    hashtags: ["#community", "#Creative"]
+  },
+  {
+    id: 17,
+    title: "Create a Shared Playlist",
+    content: "Compile a music playlist of songs that remind you of your favorite memories with your partner.",
+    time: "20 Mins",
+    image: "../images/playlist.png",
+    hashtags: ["#partner", "#Creative"]
+  },
+  {
+    id: 18,
+    title: "Check on an Elderly Neighbor",
+    content: "Knock on the door of an older neighbor just to say hello and see if they need any errands run.",
+    time: "15 Mins",
+    image: "../images/neighbour.jpg",
+    hashtags: ["#community", "#DeepConnection"]
+  },
+  {
+    id: 19,
+    title: "Mirror Affirmations",
+    content: "Stand in front of the mirror, look yourself in the eyes, and say three positive affirmations out loud.",
+    time: "5 Mins",
+    image: "../images/journal.png",
+    hashtags: ["#selflove", "#Quick"]
+  },
+  {
+    id: 20,
+    title: "Give a 15-Minute Massage",
+    content: "Help your partner unwind after a long day by offering a relaxing shoulder or foot massage.",
+    time: "15 Mins",
+    image: "../images/massage.png",
+    hashtags: ["#partner", "#DeepConnection"]
+  }
+];
+
+export default discover
