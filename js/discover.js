@@ -1,33 +1,51 @@
 import discover from "./data.js";
 const ideasGrid = document.getElementById("ideas");
 const pillTabs = document.getElementsByName("category");
+const searchValue = document.getElementById("search");
+const paginationContainer = document.getElementById("pagination");
 
-/*
-step 1. get ideas section
-step 2. inside ideas section, create idea-card div
-step 3. inside idea-card div, create 2 divs: idea-img div and idea-txt div
-step 4. inside idea-img div, create img tag and p tag with class 'time'
-step 5. inside idea-txt div, create h3 tag, p tag and button tag
+let currentPage = 1;
+const itemsPerPage = 10;
+let currentFilteredData = [...discover];
 
-user filter
-step 6. get category filters
-step 7. add event listener to radio input
-step 8. check value of radio input. display cards that contain value of radio input
-*/
 async function loadDiscover() {
-  populateDiscover(discover);
+  updateDisplay()
+
+  document
+    .querySelector(".search-bar form")
+    ?.addEventListener("submit", (e) => {
+      e.preventDefault();
+    });
+
+  searchValue.addEventListener("change", (e) => {
+    const searchedValue = e.target.value.toLowerCase();
+    currentFilteredData =
+      searchedValue === ""
+        ? discover
+        : discover.filter((cat) => cat.blub.includes(searchedValue));
+    ((currentPage = 1), updateDisplay());
+  });
 
   pillTabs.forEach((tab) => {
     tab.addEventListener("change", (e) => {
       const selectedCategory = e.target.value.toLowerCase();
-      const filteredCat =
+      currentFilteredData =
         selectedCategory === "all"
           ? discover
           : discover.filter((cat) => cat.hashtags.includes(selectedCategory));
 
-      populateDiscover(filteredCat);
+      ((currentPage = 1), updateDisplay());
     });
   });
+}
+
+function updateDisplay() {
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedItems = currentFilteredData.slice(startIndex, endIndex);
+
+  populateDiscover(paginatedItems);
+  renderPagination();
 }
 
 function populateDiscover(discoverData) {
@@ -49,4 +67,27 @@ function populateDiscover(discoverData) {
     .join("");
 }
 
-loadDiscover();
+function renderPagination() {
+  const totalPages = Math.ceil(currentFilteredData.length / itemsPerPage);
+  paginationContainer.innerHTML = "";
+
+  if (totalPages <= 1) return;
+
+  for (let i = 1; i <= totalPages; i++) {
+    const btn = document.createElement("button");
+    btn.innerText = i;
+    btn.className = i === currentPage ? "page-btn active" : "page-btn";
+
+    btn.addEventListener("click", () => {
+      currentPage = i;
+      updateDisplay();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    paginationContainer.appendChild(btn);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadDiscover();
+});
