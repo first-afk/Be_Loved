@@ -5,7 +5,8 @@ const discover = [
     content: "Take a moment to write down your current feelings, hopes, and dreams. Seal it and open it in exactly one year.",
     time: "15 Mins",
     image: "../images/note.png",
-    hashtags: ["#selflove", "#Reflection", "#Quick"]
+    hashtags: ["#selflove", "#Reflection", "#Quick"],
+    blub: ["selflove", "self", "reflection", "quick"],
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ const discover = [
     content: "Turn off all screens an hour before bed. Use this time to read, meditate, or simply be present with your thoughts.",
     time: "60 Mins",
     image: "../images/tea.png",
-    hashtags: ["#selflove", "#DeepConnection"]
+    hashtags: ["#selflove", "#DeepConnection"],
+    blub: ["selflove", 'self', 'deep', 'connection', 'deep connection'],
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ const discover = [
     content: "Gather magazines, scissors, and a board. Cut out images and words that resonate with your goals and arrange them.",
     time: "45 Mins",
     image: "../images/journal.png",
-    hashtags: ["#selflove", "#Creative"]
+    hashtags: ["#selflove", "#Creative"],
+    blub: ['selflove', 'self', 'creative'],
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ const discover = [
     content: "Write a sweet, encouraging message on a sticky note and hide it in your partner's wallet or laptop where they will find it later.",
     time: "5 Mins",
     image: "../images/sticky-note.jpg",
-    hashtags: ["#partner", "#Quick"]
+    hashtags: ["#partner", "#Quick"],
+    blub: ['partner', 'partner love', 'quick'],
   },
   {
     id: 5,
@@ -37,7 +41,8 @@ const discover = [
     content: "Pick a new recipe, gather the ingredients, and cook dinner together while playing your favorite background music.",
     time: "60 Mins",
     image: "../images/veggie.png",
-    hashtags: ["#partner", "#DeepConnection"]
+    hashtags: ["#partner", "#DeepConnection"],
+    blub: ['partner', 'partner love', 'deep', 'deep connection'],
   },
   {
     id: 6,
@@ -45,7 +50,8 @@ const discover = [
     content: "Next time you are at a cafe, pay for the order of the person behind you in line to brighten their day.",
     time: "5 Mins",
     image: "../images/mug.png",
-    hashtags: ["#community", "#Quick"]
+    hashtags: ["#community", "#Quick"],
+    blub: ['community', 'quick'],
   },
   {
     id: 7,
@@ -53,7 +59,8 @@ const discover = [
     content: "Take a trash bag and gloves on your next walk. Pick up any litter you see in your local park or street.",
     time: "30 Mins",
     image: "../images/cleanup.jpg",
-    hashtags: ["#community", "#Creative"]
+    hashtags: ["#community", "#Creative"],
+    blub: ['community', 'creative'],
   },
   {
     id: 8,
@@ -61,7 +68,8 @@ const discover = [
     content: "Clear the living room floor, lay down a blanket, and serve simple finger foods and wine for a cozy date night.",
     time: "40 Mins",
     image: "../images/picnic.jpg",
-    hashtags: ["#partner", "#Creative"]
+    hashtags: ["#partner", "#Creative"],
+    blub: ['partner', 'creative', 'partner love'],
   },
   {
     id: 9,
@@ -69,7 +77,8 @@ const discover = [
     content: "Sit quietly and practice the 4-7-8 breathing technique to center your mind and reduce stress.",
     time: "10 Mins",
     image: "../images/yoga.png",
-    hashtags: ["#selflove", "#Quick"]
+    hashtags: ["#selflove", "#Quick"],
+    blub: ['selflove', 'self', 'quick'],
   },
   {
     id: 10,
@@ -77,7 +86,8 @@ const discover = [
     content: "Spend a couple of hours walking dogs or petting cats at your local animal rescue center.",
     time: "120 Mins",
     image: "../images/shelter.jpg",
-    hashtags: ["#community", "#DeepConnection"]
+    hashtags: ["#community", "#DeepConnection"],
+    blub: ['community', 'deep connection'],
   },
   {
     id: 11,
@@ -85,7 +95,8 @@ const discover = [
     content: "Treat yourself like a guest. Cook a meal you've never tried before, plate it beautifully, and enjoy.",
     time: "45 Mins",
     image: "../images/dining.jpg",
-    hashtags: ["#selflove", "#Creative"]
+    hashtags: ["#selflove", "#Creative"],
+    blub: ['self', 'selflove', 'creative'],
   },
   {
     id: 12,
@@ -93,7 +104,8 @@ const discover = [
     content: "Text your partner out of the blue to tell them one specific thing you love and appreciate about them.",
     time: "2 Mins",
     image: "../images/text.jpg",
-    hashtags: ["#partner", "#Quick"]
+    hashtags: ["#partner", "#Quick"],
+    blub: ['partner', 'quick'],
   },
   {
     id: 13,
@@ -101,7 +113,8 @@ const discover = [
     content: "Think of a local small business you love and leave them a 5-star review detailing what makes them great.",
     time: "10 Mins",
     image: "../images/review.jpg",
-    hashtags: ["#community", "#Quick"]
+    hashtags: ["#community", "#Quick"],
+    blub: ['community', 'quick'],
   },
   {
     id: 14,
@@ -109,7 +122,8 @@ const discover = [
     content: "Go outside on a clear night, lay out a blanket, and take turns asking deep, open-ended questions.",
     time: "60 Mins",
     image: "../images/stars.jpg",
-    hashtags: ["#partner", "#DeepConnection"]
+    hashtags: ["#partner", "#DeepConnection"],
+    blub: ['partner', 'partner love', 'deep connection'],
   },
   {
     id: 15,
@@ -117,7 +131,8 @@ const discover = [
     content: "Go for a walk in a local park or forest without your phone or music. Just listen to the sounds of nature.",
     time: "30 Mins",
     image: "../images/forest.png",
-    hashtags: ["#selflove", "#DeepConnection"]
+    hashtags: ["#selflove", "#DeepConnection"],
+    blub: ['selflove', 'self', 'deep'],
   },
   {
     id: 16,
@@ -125,7 +140,8 @@ const discover = [
     content: "Gather books you've already read and drop them off at a local Little Free Library for others to enjoy.",
     time: "20 Mins",
     image: "../images/books.jpg",
-    hashtags: ["#community", "#Creative"]
+    hashtags: ["#community", "#Creative"],
+    blub: ['community', 'creative'],
   },
   {
     id: 17,
@@ -133,7 +149,8 @@ const discover = [
     content: "Compile a music playlist of songs that remind you of your favorite memories with your partner.",
     time: "20 Mins",
     image: "../images/playlist.png",
-    hashtags: ["#partner", "#Creative"]
+    hashtags: ["#partner", "#Creative"],
+    blub: ['partner', 'love', `editor's pick`,'creative'],
   },
   {
     id: 18,
@@ -141,7 +158,8 @@ const discover = [
     content: "Knock on the door of an older neighbor just to say hello and see if they need any errands run.",
     time: "15 Mins",
     image: "../images/neighbour.jpg",
-    hashtags: ["#community", "#DeepConnection"]
+    hashtags: ["#community", "#DeepConnection"],
+    blub: ['community', 'deep', 'deep connection'],
   },
   {
     id: 19,
@@ -149,7 +167,8 @@ const discover = [
     content: "Stand in front of the mirror, look yourself in the eyes, and say three positive affirmations out loud.",
     time: "5 Mins",
     image: "../images/journal.png",
-    hashtags: ["#selflove", "#Quick"]
+    hashtags: ["#selflove", "#Quick"],
+    blub: ['self', 'selflove', 'quick'],
   },
   {
     id: 20,
@@ -157,7 +176,8 @@ const discover = [
     content: "Help your partner unwind after a long day by offering a relaxing shoulder or foot massage.",
     time: "15 Mins",
     image: "../images/massage.png",
-    hashtags: ["#partner", "#DeepConnection"]
+    hashtags: ["#partner", "#DeepConnection"],
+    blub: ['partner', 'partner love', 'deep connection'],
   }
 ];
 

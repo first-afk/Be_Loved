@@ -29,7 +29,7 @@ Create a centralized, user-friendly platform that provides daily inspiration and
 
 Three distinct "Love Card" categories that provide curated ideas and prompts for expressing love:
 
-### Self-Love Cards
+#### Self-Love Cards
 
 - **Purpose**: Nurture personal well-being
 - **Content Type**: Self-care prompts, wellness reminders, personal affirmations
@@ -49,3 +49,9 @@ Three distinct "Love Card" categories that provide curated ideas and prompts for
 - **Content Type**: Acts of kindness ideas, community engagement suggestions
 - **Key Message**: "Small acts that make a difference"
 - **User Benefit**: Actionable ways to contribute to the community
+
+
+#### Discover
+- **Purpose**: Lists ideas in Cards to discover new ways to spread love
+- **Content Type**: Card Display for self-love, love towards partner and community
+- **User Benefit**: The cards gives the app a simple and easy feel and better user experience
