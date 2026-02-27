@@ -59,3 +59,9 @@ Flexbox is the primary layout engine used to manage alignment and distribution.
 Collaborating with a partner made the task of creating Be Loved easier and quicker. Sharing thoughts and ideas about the application's functions gave the app more grounding than it would've gotten if it was just a personal project. 
 
 In Version 2, we are adding Javascript to make the app dynamic and more personal to it's users.
+
+## Ver 2.0
+Version 2 is finally here and this is what we did
+
+## Javascript Implementation
+Vanilla Javascript is the backbone of the app. It keeps the Dom updated with new ideas and adds dynamic changes like filtering cards in the discover page or searching for a unique idea you'd like to use.

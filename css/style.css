@@ -154,6 +154,9 @@ a:hover{
   font-size: var(--fs-body-lg);
   font-weight: var(--fw-black);
 }
+.navigation h2:hover{
+  color: black;
+}
 
 .hero h1{
   font-size: 3.5rem;
