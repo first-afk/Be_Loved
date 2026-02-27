@@ -127,6 +127,7 @@ select {
 
 .back-circle {
   position: absolute;
+  cursor: pointer;
   top: var(--spacing-xl);
   left: var(--spacing-xl);
   width: 3rem;
@@ -139,6 +140,10 @@ select {
   text-decoration: none;
   color: var(--color-text-primary);
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.back-circle:hover{
+  color: var(--color-primary-pink);
 }
 
 .details-image-wrapper {
@@ -173,18 +178,10 @@ select {
   font-style: italic;
 }
 
-.steps-list {
-  list-style: none;
+.hashtags, .time {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
-}
-
-.steps-list li {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
   font-size: var(--fs-body-sm);
 }
 

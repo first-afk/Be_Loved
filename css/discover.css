@@ -92,6 +92,7 @@ main > section {
   flex-direction: column;
   gap: var(--spacing-xs);
   margin: var(--spacing-xs);
+  cursor: pointer;
 }
 
 .idea-card h3 {
