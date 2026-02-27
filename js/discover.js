@@ -8,7 +8,10 @@ let currentPage = 1;
 const itemsPerPage = 10;
 let currentFilteredData = [...discover];
 
+
 async function loadDiscover() {
+  localStorage.clear();
+
   updateDisplay()
 
   document
@@ -46,23 +49,34 @@ function updateDisplay() {
 
   populateDiscover(paginatedItems);
   renderPagination();
+
+  const ideaCards = document.querySelectorAll(".idea-card");
+
+ideaCards.forEach(card => {
+  card.addEventListener('click', function () {
+    const id = card.dataset.id;
+    const selectedIdea = discover.find(item => item.id == id);
+    localStorage.setItem('previousPage', JSON.stringify('discover'))
+    localStorage.setItem('ideaData', JSON.stringify(selectedIdea));
+    location.href = "idea-details.html";
+  });
+});
 }
 
 function populateDiscover(discoverData) {
   ideasGrid.innerHTML = discoverData
     .map(
       (data) =>
-        `<div class="idea-card">
+        `<div class="idea-card" data-id="${data.id}">
         <div class="idea-img">
-        <img src=${data.image} alt="${data.title}">
-        <p class="time">${data.time}</p>
+          <img src="${data.image}" alt="${data.title}">
+          <p class="time">${data.time}</p>
         </div>
         <div class="idea-txt">
-        <h3 class="card-title">${data.title}</h3>
-        <p class="hashtags">${data.hashtags.join(" ")}</p>
+          <h3 class="card-title">${data.title}</h3>
+          <p class="hashtags">${data.hashtags.join(" ")}</p>
         </div>
-    </div>
-    `,
+      </div>`
     )
     .join("");
 }
