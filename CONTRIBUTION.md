@@ -1,9 +1,23 @@
 # Contribution Sheet
 
-## Week 4
+## Iyobosa Omoruyi
 
-### Iyobosa Omoruyi
+### Week 6
+#### Love form and Idea details with Javascript
 
+**What I did:**
+Created details.js and form.js to make love form and ideas page functional.
+
+**What it does:**
+
+- Details.Js dynamically fetches random Ideas from Discover and displays it to users.
+- Form.js recieves input from love form page, parse the recieved data and finds a similar match in Discover, redirects user to Idea details page where they view the idea in full.
+- Created a 'Try Another' button in Ideas page for users to get a different match instantly .
+- Added a 'Back' button which uses the 'window object' property to help users navigate through the app seamlessly.
+
+---
+
+### Week 4
 #### Love Form Page
 
 **What I did:**
@@ -54,9 +68,7 @@ Defined the core design rules.
 - Used CSS variables for colors, spacing, and border radius.
 - Created a consistent spacing scale for layout alignment.
 
-## Week 3
-
-### Iyobosa Omoruyi (Design + Hero & Footer Implementation)
+### Week 3
 
 **What I did:**
 Created an initial design concept and implemented the header and footer.
@@ -70,10 +82,23 @@ Created an initial design concept and implemented the header and footer.
 - Ensured consistent spacing and semantic HTML structure for both header and footer.
 
 
-## Week 4
+## Esther Orieji
 
-### Esther Orieji
+### Week 6
+#### Discover page (using Javascript)
 
+What I did:
+Built Discover page.
+
+How I did it:
+
+- Structured the cards using vanilla Javascript.
+- Designed search form.
+- Created category pills.
+- Added pagination to reduce data sent to the DOM in order to make it load faster.
+
+---
+### Week 4
 #### Authentication Pages (Sign Up & Log In)
 
 What I did:
@@ -115,9 +140,7 @@ How I did it:
 - Adjusted font sizes for smaller screens.
 - Hid decorative elements on mobile.
 
-## Week 3
-
-### Esther Orieji (Design + Navbar & Main Section Implementation)
+### Week 3
 
 *What I did:*
 Created a separate design concept and implemented the navbar and main content section.

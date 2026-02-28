@@ -366,7 +366,7 @@ const discover = [
     time: "15 Mins",
     image: "../images/note.png",
     hashtags: ["#selflove", "#Reflection", "#Creative"],
-    blub: ["self", "selflove", "writing", "creative"],
+    blub: ["self", "selflove", "writing", `editor's pick`, "creative"],
     mood: "creative"
   },
   {
@@ -416,7 +416,7 @@ const discover = [
     time: "40 Mins",
     image: "../images/cleanup.jpg",
     hashtags: ["#community", "#Creative"],
-    blub: ["community", "creative", "nature"],
+    blub: ["community", "creative", `editor's pick`, "nature"],
     mood: "creative"
   },
   {
@@ -436,7 +436,7 @@ const discover = [
     time: "20 Mins",
     image: "../images/note.png",
     hashtags: ["#partner", "#Reflection"],
-    blub: ["partner", "partner love", "writing", "reflection"],
+    blub: ["partner", "partner love", "writing", `editor's pick`, "reflection"],
     mood: "romantic"
   },
   {
@@ -496,7 +496,7 @@ const discover = [
     time: "20 Mins",
     image: "../images/stars.jpg",
     hashtags: ["#partner", "#Quick", "#Reflection"],
-    blub: ["partner", "partner love", "nature", "quick"],
+    blub: ["partner", "partner love", "nature", `editor's pick`, "quick"],
     mood: "romantic"
   }
 ];
