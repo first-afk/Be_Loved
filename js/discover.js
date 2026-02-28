@@ -64,6 +64,10 @@ ideaCards.forEach(card => {
 }
 
 function populateDiscover(discoverData) {
+   if (discoverData.length === 0) {
+    ideasGrid.innerHTML = `<div class="no-results">No ideas found.</div>`;
+    return;
+  }
   ideasGrid.innerHTML = discoverData
     .map(
       (data) =>
