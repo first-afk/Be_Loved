@@ -129,3 +129,7 @@ CSS Grid used for:
 Working on Be Loved as a team was both challenging and rewarding. We made sure to divide responsibilities. Everyone understood their role, which reduced overlap and allowed us to move faster. We had some issues in communication but we were able to overcome this by making sure we talked about things before implementing.
 
 Looking ahead to Version 2, we plan to transition from a static HTML/CSS site to a dynamic experience using JavaScript. Authentication will let users log in and save their favorite ideas, while the Discover page will get live filters to find inspiration instantly. Idea Details will feature interactive checklists to track progress, and the Form page will act as the engine that uses your input to personalize the entire experience.
+
+## Javascript Implementation
+
+Vanilla JavaScript powers the app’s logic by capturing user input, filtering ideas based on preferences, storing temporary state with localStorage, and dynamically updating the DOM across pages.
