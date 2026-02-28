@@ -58,50 +58,43 @@ Three distinct "Love Card" categories that provide curated ideas and prompts for
 
 ## JavaScript Implementation
 
-To create a seamless and interactive experience, we implemented a modular JavaScript architecture across three core functional areas: Discovery Page, Love Form, and Idea Details Page.
+To create a smooth and interactive experience, we structured the JavaScript into three main areas: Discover Page, Love Form, and Idea Details Page.
 
 **What we did:**
 
-- Organized logic into separate JS files for structure and clarity.
-- Connected user inputs directly to filtered results and dynamic page updates.
-- Used `localStorage` to manage simple cross-page state.
+- Separated logic into different JS files for better structure and readability.
+- Connected search, filters, pagination, and form inputs directly to filtered results.
+- Dynamically updated the DOM based on user actions.
+- Used localStorage to handle simple cross-page state management.
 
-## Key Logic Features
+### Key Logic Features
 
-**Smart Filtering:**
+- **Search**: Filters activities instantly based on keywords typed by the user.
 
-- Filtered ideas based on user selections (category, mood, time, search).
-- Used array methods like `.filter()` and `.includes()` for real-time results.
+- **Category Filtering**: Narrows results using selected hashtags like #selflove or #partner.
 
-**Time Buckets:**
+- **Time Matching**: Groups activities into flexible time ranges to better match user availability.
 
-- Grouped time into ranges (e.g., 0–29 mins for “5 mins”) instead of exact matches.
-- Made results more flexible and user-friendly.
+- **Pagination**: Breaks large results into smaller pages for faster loading and easier navigation.
 
-**Cross-Page State Management:**
+- **Page Memory**: Uses localStorage to remember the selected idea and previous page.
 
-- Stored selected data in `localStorage`.
-- Used flags like `previousPage` to control page behavior.
+- **Try Another Logic**: Randomly selects a new suggestion without repeating the current one.
 
-**"Try Another" Feature:**
-
-- Built a non-repeating randomizer.
-- Removed the current idea from the temporary list before selecting a new one.
-
-## Logic Flow (How Data Moves Through the App)
+### Logic Flow (How Data Moves Through the App)
 
 The app follows a clear data-driven process:
 
 **1. User Input:**
 
-- User interacts with filters or fills the form.
+- User searches, selects a category pill, or fills the form.
 - Data is captured using event listeners or FormData.
 
-**2. JavaScript Filtering:**
+**2. JavaScript Filtering & Pagination:**
 
-- The app filters the main ideas array based on selected preferences.
+- The app filters the main ideas array based on keywords, hashtags, or form preferences.
 - Time selections are grouped into flexible ranges (time buckets).
-- Matching results are stored temporarily.
+- Results are split into smaller pages using pagination logic.
 
 **3. State Management:**
 
